@@ -32,10 +32,22 @@ public class DemoWrapperClass {
 	}
 	
 	String charProperties(char c) {
+		String output = "";
+		
+		if(Character.isLetter(c)) {
+			if(Character.isUpperCase(c)) {
+				output = Character.toLowerCase(c) + "|" + Character.toUpperCase(c);
+			} else if (Character.isLowerCase(c)) {
+				output = Character.toUpperCase(c) + "|" + Character.toLowerCase(c);
+			}
+		} else {
+			output = "false";
+		}
+		
 		return 	(
 					"White space: " + Character.isWhitespace(c) +
 					"\nDigit: " + Character.isDigit(c) +
-					"\nLetter: " + Character.isLetter(c) + "\n"
+					"\nLetter: " + output + "\n"
 				);
 	}
 }

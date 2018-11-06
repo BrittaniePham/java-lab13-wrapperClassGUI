@@ -68,7 +68,6 @@ public class DemoWrapperClassGui extends JFrame {
      * Create the frame.
      */
     public DemoWrapperClassGui() {
-    	
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(50, 50, 700, 450);
 
@@ -77,7 +76,6 @@ public class DemoWrapperClassGui extends JFrame {
         createCharLabel();
         createNumberControlPanel();
         createNumberTextArea();
-
         createContentPane();
     }
 
